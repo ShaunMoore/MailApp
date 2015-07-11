@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>MailApp</title>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="./css/app.css">
+		<!-- CSS END -->
+	</head>
+	<body>
+		<div id="wrapper" class="width-100">
+			<nav class="width-100">
+				<ul id="tabs">
+					<!-- Below are the clickable tabs which switch the emails being displayed within the #content div -->
+					<li><a href="#" class="get-mail" data-key="inbox">Inbox</a></li>
+					<li><a href="#" class="get-mail" data-key="sent">Sent</a></li>
+					<li><a href="#" class="get-mail" data-key="drafts">Drafts</a></li>
+					<li><a href="#" class="get-mail" data-key="spam">Spam</a></li>
+				</ul>
+			</nav>
+			<!-- This is the conatiner which will hold each email and will be populated on page load-->
+			<div id="content"></div>
+		</div>
+		<!-- This is the file where th JSON data is being loaded from -->
+		<script type="text/javascript" src="./js/data.js"></script>
+		<!-- JS -->
+		<script type="text/javascript" src="./js/classes/Mail.js"></script>	
+		<script type="text/javascript" src="./js/app.js"></script>
+		<!-- JS END -->
+	</body>
+</html>
